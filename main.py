@@ -13,7 +13,7 @@ st.title('GKV vs PKV')
 years_range = st.slider("Betrachtungszeitraum in Jahren:", THIS_YEAR, A_HUNDRED_YEARS, (THIS_YEAR, THIS_YEAR+75))
 
 # input fields
-gkv_percent = st.number_input('GKV Abschlag in % (inklusive Pflegeversicherung)', min_value=0.0, max_value=100.0, value=14.6+1.69+3.7)
+gkv_percent = st.number_input('GKV Abschlag in % (inklusive Pflegeversicherung) (netto)', min_value=0.0, max_value=100.0, value=19.0/2.0)
 pkv_start = st.number_input('PKV Startkosten in Euro (netto)', min_value=0.0, max_value=1_000.0, value=450.0)
 
 gkv_percent_increase = st.number_input('GKV Abschlag Erhöhung pro Jahr in %', min_value=0.0, max_value=100.0, value=3.3)
